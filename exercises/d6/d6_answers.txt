@@ -1,0 +1,28 @@
+1. git init initializes a new repository.
+
+2. git add adds the file to the "index" but I am not really sure why you have to do that before you commit the file. git commit actually records the changes locally, but git add just gets the file ready to be committed?
+
+3. Staged is when the file has been selected and then it is ready to be committed. Once a file is committed, that revision is saved in your local repository.
+
+4. git commit -a is the shortcut for adding all files and committing them
+
+5. git reset HEAD -- path/to/file
+   To see the different commits: git log path/to/file
+   Get the right version of the file: git checkout <commit> path/to/file 
+   Commit that modification: git commit
+
+6. Commit messages are important because they tell you what modifications you made at each commit, which makes it a lot easier to find which past version you want to revert to.
+
+7. git checkout -b old-state <commit-id>
+
+8. Hit the esc key, then type :q
+
+GitHub Research
+
+1. Git is the system for controlling revisions. GitHub is a service that hosts git repositories. git could exist without GitHub, but not the other way around.
+
+2. "Forking" is one thing that makes GitHub cool. You can take someone else's code and make your own revisions to it. If the original owner likes the changes, he can add it into his code.
+
+3. git push updates your remote repositories (like GitHub)
+
+4. git pull is like running git fetch and then git merge. It incorporates changes from a remote repository into the current branch
