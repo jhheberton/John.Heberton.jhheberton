@@ -1,0 +1,16 @@
+E1
+
+.all --class method
+.first --class method
+.new --class method
+.find --class method
+.find_by --class method
+.where --class method
+.save --instance method
+.update_attributes --instance method
+.destroy --instance method
+
+find vs find_by -- you give find an id, say find(1), and it returns the row with that id. you use find_by if you want to look up something by, say, username or tweet body. You would say find_by(:name => "Lowen")
+
+where vs find_by -- I am still not completely sure, but it seems like you can pass .where more specific parameters
+

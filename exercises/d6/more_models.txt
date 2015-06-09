@@ -1,0 +1,45 @@
+Relevant views:
+1. Login
+2. Viewing cart
+3. Shopping pages
+4. Account page
+5. Checkout page
+6. Credit card information page
+7. Home screen with reccommendations
+
+Data we want to store:
+1. Items in cart
+2. User account information (age, gender, address)
+3. How many of each item are left
+4. User payment information
+5. User purchase history
+6. User search history
+7. Best sellers
+8. Date items were purchased
+9. Items user looked at
+10. Prices of items
+11. Ratings of items
+
+
+Actions that can be done:
+1. User signs in
+2. User searches for items
+3. User adds item to cart
+4. User looks at items
+5. Server updates recently viewed items
+6. User deletes items from cart
+7. Cart updates with each item added
+
+Models:
+Users - Attributes: ID, username, password, Name, Addresses (billing and shipping), payment information
+Items - Attributes: ID, price, quantity, description, rating, seller, name
+Cart - Attributes: ID, items, user
+
+I combined account and user because I am going to assume that each user has one account and their attributes were pretty similar (name, address, username, password)
+
+Items belong to carts
+Carts belong to users
+Carts have many items
+
+Users to carts - 1 to 1
+Carts to items - Many to many

@@ -1,0 +1,11 @@
+1. A database is a place where information (data) is stored and can be accessed.
+
+2. A database table is a set of data stored in a table. A good analogy for a database table is excel.
+
+3. On paper
+
+4. It is an effective way to store large amounts of data.
+
+5. Active record is a way of storing data like we talked in class. There is a new row of data for each new object.
+
+6. A database table is the table itself. An ActiveRecord model associates a class to a database. A resource is basically an object you want users to be able to perform CRUD operations on.

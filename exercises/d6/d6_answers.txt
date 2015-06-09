@@ -26,3 +26,27 @@ GitHub Research
 3. git push updates your remote repositories (like GitHub)
 
 4. git pull is like running git fetch and then git merge. It incorporates changes from a remote repository into the current branch
+
+Whats the Internet Again?
+
+1. A request is something like a URL
+
+2. A "client" makes the request
+
+3. The request goes to a specific server based on its IP address.
+
+4. The server processes the request and responds with information.
+
+5. The server sends back the requested data in html format which the computer presents on the screen.
+
+6. The computer displays the information on the screen.
+
+Ruby Rocks
+
+1. It says 404 in big font on the screen and says that there is not a site at that address.
+
+2. The server could not find a webpage at the given address.
+
+3. The first 4 means that it is a client error (5 is a server error). The 0 means that it is a general syntax error. The last 4 is the specific error (no page at that address)
+
+4. Yes

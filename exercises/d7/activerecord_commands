@@ -1,0 +1,49 @@
+1. lowen = User.new(:name => "Matt Lowen", :followers => 150)
+lowen.save
+
+2. User.find(2)
+
+3. User.find_by(:name => "Matt Lowen")
+
+4. User.find_by(:followers => 10)
+
+5. lowen.update_attributes(:name => John Heberton)
+
+6. tweet = Tweet.new(:body => "How much low would a Lowen wen if a Lowen could low wen?", :user_id => 2)
+tweet.save
+
+7. tweet.update_attributes(:body => "Howzit?")
+
+8. tweet.destroy
+
+1. i = 1
+while i < 11
+user = User.new(:name => "#{i}")
+user.save
+i+=1
+end
+
+2. i = 1
+while i < 11
+user = User.find_by(:name => "#{i}")
+user.destroy
+i+=1
+end
+
+3. i = 1
+while i < 11
+tweet = Tweet.new(:body => "This is a tweet")
+tweet.save
+i+=1
+end
+
+4. i = 1
+while i < 11
+tweet = Tweet.find_by(:body => "This is a tweet")
+tweet.update_attributes(:body => "Ruby is fat")
+i+=1
+end
+
+5. tweet = Tweet.find_by(:id => 4)
+tweet.update_attributes(:body => "Ruby is getting even fatter")
+
