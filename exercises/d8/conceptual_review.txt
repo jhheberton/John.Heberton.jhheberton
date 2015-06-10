@@ -1,0 +1,1 @@
+We aren't using scaffolding because it gives you lots of routes you do not need, and there is not really any flexibility
