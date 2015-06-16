@@ -1,0 +1,16 @@
+<h1> Stories </h1>
+
+<%= render :partial => 'errors', :locals => {:story => @story} %>
+
+<%= render :partial => 'form', :locals => {:story => @story} %>
+
+<br/>
+
+<ol>
+<% @stories.each do |story| %>
+<li> "<%= story.title %>"<br/>
+<%= story.body %><br/>
+<%= link_to "Delete", "/stories/#{story.id}", :method => :delete %>
+</li>
+<% end %>
+</ol>

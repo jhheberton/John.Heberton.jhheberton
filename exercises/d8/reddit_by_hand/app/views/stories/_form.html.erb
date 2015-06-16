@@ -1,0 +1,10 @@
+<%= form_for(Story.new, {:url => "/stories"} ) do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %>
+  <br/>
+  <%= f.label :body %>:
+  <%= f.text_field :body %>
+  <br/>
+  <br/>
+  <%= f.submit %>
+<% end %>
