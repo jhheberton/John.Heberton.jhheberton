@@ -1,0 +1,11 @@
+Items:
+
+<ol>
+<% @items.each do |item| %>
+<li><%= item.title %>
+<%= item.description %>
+</li>
+<% end %>
+</ol>
+
+<%= link_to 'New Item', items_new_path %>
